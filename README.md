@@ -24,7 +24,7 @@ git push origin master  <br>
 • How is encapsulation implemented in Python? Provide an example. Encapsulation in Python is implemented using private and protected access specifiers. Example:<br>
 
 python
-Копировать код
+
 class Example:
     def __init__(self, value):
         self.__private_value = value  # private variable
@@ -38,7 +38,7 @@ class Example:
 • What is inheritance in Python? Give an example of a simple inheritance hierarchy. Inheritance allows a class to inherit attributes and methods from another class. Example:<br>
 
 python
-Копировать код
+
 class Parent:
     def __init__(self, name):
         self.name = name
@@ -56,7 +56,7 @@ class Child(Parent):
 • Single Inheritance in Python. Single inheritance allows a class to inherit from one superclass. Example:<br>
 
 python
-Копировать код
+
 class Parent:
     pass
 
@@ -65,7 +65,7 @@ class Child(Parent):
 • Multiple Inheritance in Python. Multiple inheritance allows a class to inherit from more than one superclass. Example:<br>
 
 python
-Копировать код
+
 class Parent1:
     pass
 
@@ -77,7 +77,7 @@ class Child(Parent1, Parent2):
 • Multilevel Inheritance in Python. Multilevel inheritance is a type of inheritance where a class inherits from a class that inherits from another class. Example:<br>
 
 python
-Копировать код
+
 class Grandparent:
     pass
 
@@ -89,7 +89,7 @@ class Child(Parent):
 • Hierarchical Inheritance in Python. Hierarchical inheritance is a type of inheritance where multiple classes inherit from a single superclass. Example:<br>
 
 python
-Копировать код
+
 class Parent:
     pass
 
@@ -101,7 +101,7 @@ class Child2(Parent):
 • super() Function in Python Inheritance. The super() function is used to call the parent class's methods. Example:<br>
 
 python
-Копировать код
+
 class Parent:
     def __init__(self):
         self.value = "Parent"
@@ -113,7 +113,7 @@ class Child(Parent):
 • Composition in Python. Composition is a design principle where one class contains an object of another class. Example:<br>
 
 python
-Копировать код
+
 class Engine:
     def start(self):
         print("Engine started")
@@ -127,7 +127,7 @@ class Car:
 • Aggregation in Python. Aggregation is a type of association where one class owns another class, but both can exist independently. Example:<br>
 
 python
-Копировать код
+
 class Department:
     pass
 
@@ -137,7 +137,7 @@ class Employee:
 • Association in Python. Association is a relationship between two classes where they use each other’s functionalities but can exist independently. Example:<br>
 
 python
-Копировать код
+
 class Teacher:
     def __init__(self, name):
         self.name = name
@@ -152,7 +152,7 @@ class Course:
 • How do you achieve method overloading in Python? Python does not support traditional method overloading. Instead, default arguments and variable-length arguments are used to achieve similar functionality.<br>
 
 python
-Копировать код
+
 def greet(name, message="Hello"):
     print(f"{message}, {name}")
 • Magic Methods (Special Methods) in Python. Magic methods in Python are special methods that start and end with double underscores. They allow customization of class behavior. Examples include init, str, repr.<br>
@@ -177,7 +177,7 @@ def greet(name, message="Hello"):
 • Discuss the concept of method overriding and provide an example in Python. Method overriding allows a subclass to provide a specific implementation of a method already defined in its superclass.<br>
 
 python
-Копировать код
+
 class Parent:
     def greet(self):
         print("Hello from Parent")
@@ -188,7 +188,7 @@ class Child(Parent):
 • How can you implement multiple inheritance in Python? Multiple inheritance can be implemented by defining a class that inherits from multiple base classes.<br>
 
 python
-Копировать код
+
 class Parent1:
     pass
 
@@ -224,7 +224,7 @@ How does PostgreSQL handle data replication and high availability? PostgreSQL su
 What are the advantages and disadvantages of using PostgreSQL as a database system? Advantages include advanced features, extensibility, and strong standards compliance. Disadvantages may include a steeper learning curve for beginners and potential performance issues with very large datasets without proper tuning.<br>
 Can you explain the role of triggers in PostgreSQL and provide examples of their use? Triggers are special procedures that are automatically executed or fired when certain events occur. Example:<br>
 sql
-Копировать код
+
 CREATE TRIGGER update_timestamp
 BEFORE UPDATE ON my_table
 FOR EACH ROW
