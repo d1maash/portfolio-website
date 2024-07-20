@@ -749,3 +749,15 @@ header {
         text-align: center;
     }
 }
+
+.project-info {
+    transition: all 0.8s ease;
+}
+
+.project-info>a:hover {
+    color: rgb(142, 142, 0);
+}
+
+.project-info:hover {
+    color: rgb(142, 142, 0);
+}
