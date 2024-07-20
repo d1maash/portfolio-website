@@ -23,53 +23,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<style>
-    .content {
-        filter: blur(5px);
-    }
-
-    .popup {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-
-    .overlayyy {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-    }
-</style>
 
 <body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
-    <div class="overlayyy" id="overlayyy"></div>
-    <div class="popup" id="popup">
-        <h2>Select Language</h2>
-        <button onclick="setLanguage('RUS')">RUS</button>
-        <button onclick="setLanguage('ENG')"><a href="index-eng.html">ENG</a></button>
-        <button onclick="setLanguage('KAZ')">KAZ</button>
-    </div>
-    <script>
-        function setLanguage(language) {
-            alert('Selected language: ' + language);
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlayyy').style.display = 'none';
-            document.querySelector('.content').style.filter = 'none';
-        }
 
-        window.onload = function () {
-            document.querySelector('.content').style.filter = 'blur(5px)';
-        };
-    </script>
     <div class="content">
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
