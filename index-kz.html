@@ -23,70 +23,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<style>
-    .content {
-        filter: blur(5px);
-    }
-
-    .popup {
-        position: fixed;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: white;
-        padding: 30px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-
-    .overlayyy {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-    }
-</style>
-<style>
-    .set-language {
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        padding: 10px;
-        transition: all 0.4s ease;
-    }
-
-    .set-language:hover {
-        background-color: white;
-        color: black;
-    }
-</style>
 
 <body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
-    <div class="overlayyy" id="overlayyy"></div>
-    <div class="popup" id="popup">
-        <h2>Select Language</h2>
-        <a class="set-language" href="index-ru.html">RUS</a>
-        <a class="set-language" href="index-eng.html">ENG</a>
-        <a class="set-language" href="index-kz.html">KAZ</a>
-    </div>
 
-
-    <script>
-        function setLanguage(language) {
-            alert('Selected language: ' + language);
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlayyy').style.display = 'none';
-            document.querySelector('.content').style.filter = 'none';
-        }
-
-        window.onload = function () {
-            document.querySelector('.content').style.filter = 'blur(5px)';
-        };
-    </script>
     <div class="content">
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -248,11 +187,11 @@
 
                         <nav id="one-page-menu" class="vertical-menu my-5">
                             <ul class="menu-list list-unstyled">
-                                <li><a href="#home" class="nav-link">Home</a></li>
-                                <li><a href="#about" class="nav-link">About</a></li>
-                                <li><a href="#experience" class="nav-link">Experience</a></li>
-                                <li><a href="#portfolio" class="nav-link">Works</a></li>
-                                <li><a href="#contact" class="nav-link">Contact</a></li>
+                                <li><a href="#home" class="nav-link">Главная</a></li>
+                                <li><a href="#about" class="nav-link">Мен туралы</a></li>
+                                <li><a href="#experience" class="nav-link">Опыт</a></li>
+                                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                                <li><a href="#contact" class="nav-link">Конакты</a></li>
 
 
                             </ul>
@@ -312,8 +251,9 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5" data-aos="fade-in">
-                                        <span class="text-muted text-uppercase">Web Developer / Software Engineer</span>
-                                        <h1 class="banner-title display-xl lh-1 txt-fx slide-up">Dinmukhanbet Aizharykov
+                                        <span class="text-muted text-uppercase">Веб Разработчик / Инженер
+                                            Программист</span>
+                                        <h1 class="banner-title display-xl lh-1 txt-fx slide-up">Динмуханбет Айжарыков
                                         </h1>
                                     </div>
                                 </div>
@@ -323,195 +263,160 @@
                                 <div class="col-lg-3">
                                     <div class="icon-box" data-aos="fade-up">
                                         <span>01</span>
-                                        <h3 class="sub-heading">Web Developing</h3>
-                                        <p>Creating dynamic and beautiful websites</p>
+                                        <h3 class="sub-heading">Веб Разработка</h3>
+                                        <p>Создание динамичных и красивых веб-сайтов</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                                         <span>02</span>
-                                        <h3 class="sub-heading">Sofware Engineering</h3>
-                                        <p>Working with servers and other devices in the field of engineering</p>
+                                        <h3 class="sub-heading">Разработка программного обеспечения</h3>
+                                        <p>Работа с серверами и другими устройствами в области инженерии</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                                         <span>03</span>
-                                        <h3 class="sub-heading">Mentoring and Сoaching</h3>
-                                        <p>I give advice and train people in the field of programming</p>
+                                        <h3 class="sub-heading">Наставничество и коучинг</h3>
+                                        <p>Я даю советы и обучаю людей в области программирования</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
                                     <a href="#portfolio" class="btn btn-dark text-uppercase py-4 px-5"
-                                        data-aos="fade-up" data-aos-delay="300">View All Work</a>
+                                        data-aos="fade-up" data-aos-delay="300">Посмотреть все работы</a>
                                 </div>
                             </div>
                         </section>
-
                         <section id="about" class="my-5 py-5 bg-text" data-text="02">
                             <div class="row d-flex flex-wrap" data-aos="fade-up">
                                 <div class="col-lg-6 pb-5">
-                                    <span class="text-muted text-uppercase">BIODATA</span>
-                                    <h2 class="display-4 txt-fx slide-up">Education</h2>
+                                    <span class="text-muted text-uppercase">БИОДАННЫЕ</span>
+                                    <h2 class="display-4 txt-fx slide-up">Образование</h2>
                                     <div class="data-info py-3" data-aos="fade-up">
                                         <span class="meta-date">2020-2024</span>
-                                        <h3 class="info-title">Information System</h3>
-                                        <p><b>Higher College of Apec Petrotechnic </b>(Atyrau)</p>
+                                        <h3 class="info-title">Информационные системы</h3>
+                                        <p><b>Высший колледж Apec Petrotechnic </b>(Атырау)</p>
                                         <p class="education-info">
                                             <b>
-                                                What have I learned from this college?
+                                                Что я узнал в этом колледже?
                                                 <br>
-                                                Web development.
+                                                Веб-разработка.
                                                 <br>
                                                 <br>
                                             </b>
-                                            ⇒ Designing or layout of various web sites using HTML CSS SCSS JS.
+                                            ⇒ Проектирование или верстка различных веб-сайтов с использованием HTML CSS
+                                            SCSS JS.
                                             <br>
-                                            ⇒ Developing server side to various forms and also working with databases
-                                            such
-                                            as
-                                            MySQL, MongoDB, PostgreSQL.
+                                            ⇒ Разработка серверной части для различных форм, а также работа с базами
+                                            данных
+                                            такими как MySQL, MongoDB, PostgreSQL.
                                             <br>
-                                            ⇒ Learning the system part and also learning networking as per Cisco Courses
-                                            plan.
+                                            ⇒ Изучение системы, а также сетей по плану курсов Cisco.
                                             <br>
-                                            ⇒ Mobile development with programming languages like Swift, Flutter.
+                                            ⇒ Мобильная разработка с использованием языков программирования Swift,
+                                            Flutter.
                                             <br>
-                                            ⇒ Study of Cisco network architecture.
+                                            ⇒ Изучение сетевой архитектуры Cisco.
                                             <br>
-                                            ⇒ Study of various commands on the command line in Linux OS.
+                                            ⇒ Изучение различных команд в командной строке ОС Linux.
                                             <br>
-                                            ⇒ Video editing and also learning Photoshop.
+                                            ⇒ Видеомонтаж и изучение Photoshop.
                                         </p>
                                     </div>
-                                    <!-- <div class="data-info" data-aos="fade-up" data-aos-delay="100">
-                                    <span class="meta-date">2004 - 2006</span>
-                                    <h3 class="info-title"</h3>
-                                    <p></p>
-                                </div> -->
                                 </div>
                                 <div class="col-lg-6 pb-5">
                                     <br>
-                                    <h2 class="display-4 txt-fx slide-up">Experiences</h2>
+                                    <h2 class="display-4 txt-fx slide-up">Опыт</h2>
                                     <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
-                                        <span class="meta-date">2023 August - 2024
-                                            Jule</span>
-                                        <h3 class="info-title">West Development Company LLP: Software Engineer</h3>
-                                        <br>⇒ Maintaining an old website until 2024
-                                        <br>⇒ Creation and redesign of the site with inclusion of content from the old
-                                        site
-                                        <br>⇒ Creation and layout of the site for a short period of time (with
-                                        animations,
-                                        adaptation for mobile, tablets, laptops)
-                                        <br>⇒ Using frameworks as well as plugins with open source to use animations and
-                                        improve UI/UX elements.
-                                        <br>⇒ Supporting new content for the new website as well as migrating all old
-                                        content
-                                        to the new design.
-                                        <br>⇒ Using admin panels such as Plesk to manage all hosting on which the domain
-                                        is
-                                        installed
-                                        <br>⇒ Support for mailboxes that work under certain domain systems
+                                        <span class="meta-date">Август 2023 - Июль 2024</span>
+                                        <h3 class="info-title">West Development Company LLP: Программист</h3>
+                                        <br>⇒ Поддержка старого веб-сайта до 2024 года
+                                        <br>⇒ Создание и редизайн сайта с включением контента со старого сайта
+                                        <br>⇒ Создание и верстка сайта за короткое время (с анимацией,
+                                        адаптацией для мобильных устройств, планшетов, ноутбуков)
+                                        <br>⇒ Использование фреймворков и плагинов с открытым исходным кодом для
+                                        добавления анимации и
+                                        улучшения элементов UI/UX.
+                                        <br>⇒ Поддержка нового контента для нового веб-сайта, а также перенос всего
+                                        старого
+                                        контента на новый дизайн.
+                                        <br>⇒ Использование панелей администрирования, таких как Plesk, для управления
+                                        всем хостингом, на котором установлен домен.
+                                        <br>⇒ Поддержка почтовых ящиков, работающих в рамках определенных доменных
+                                        систем
                                     </div>
                                     <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
-                                        <span class="meta-date">2024 April - <span class="present-work"> PRESENT
-                                            </span></span>
-                                        <h3 class="info-title">Global Industrial Construction LLP: Software Engineer /
-                                            Web Developer (remote)</h3>
-                                        <br>⇒ Website development and maintenance
-                                        <br>⇒ Frequent changes of UI/UX elements of the site to create convenience for
-                                        site visitors
-                                        <br>⇒ Creation of design and UI/UX elements including some icons
-                                        <br>⇒ Site layout according to the created design using HTML/CSS/JS/PHP/REACT
-                                        <br>⇒ Maintaining the site
-                                        <br>⇒ Managing the mail domain so that employees use the mail system with the
-                                        site domain e.g. d.aizharykov@gi-construction.kz.
-                                        <br>⇒ Creation of various content for the site and maintenance of social
-                                        networks of the company itself
-                                        <br>⇒ Posting various content on all social platforms of the company (platforms
-                                        such as INSTAGRAM, LINKEDIN, etc.)
-                                        <br>⇒ Creating designs for company posts
+                                        <span class="meta-date">Апрель 2024 - <span class="present-work"> НАСТОЯЩЕЕ
+                                                ВРЕМЯ </span></span>
+                                        <h3 class="info-title">Global Industrial Construction LLP: Программист /
+                                            Веб-разработчик (удаленно)</h3>
+                                        <br>⇒ Разработка и поддержка веб-сайта
+                                        <br>⇒ Частые изменения элементов UI/UX сайта для удобства посетителей
+                                        <br>⇒ Создание дизайна и элементов UI/UX, включая некоторые иконки
+                                        <br>⇒ Верстка сайта по созданному дизайну с использованием HTML/CSS/JS/PHP/REACT
+                                        <br>⇒ Поддержка сайта
+                                        <br>⇒ Управление почтовым доменом, чтобы сотрудники использовали почтовую
+                                        систему с доменом сайта, например, d.aizharykov@gi-construction.kz.
+                                        <br>⇒ Создание различного контента для сайта и поддержка социальных сетей
+                                        компании
+                                        <br>⇒ Публикация различного контента на всех социальных платформах компании
+                                        (такие платформы, как INSTAGRAM, LINKEDIN и т.д.)
+                                        <br>⇒ Создание дизайнов для постов компании
                                         <br><br>
-                                        <a href="#" class="portfolio-link"><button>
-                                                PORTFOLIO
-                                            </button></a>
+                                        <a href="#" class="portfolio-link"><button>ПОРТФОЛИО</button></a>
                                     </div>
-
-                                    <!-- <div class="data-info" data-aos="fade-up" data-aos-delay="300">
-                                    <span class="meta-date">2019</span>
-                                    <h3 class="info-title"></h3>
-                                    <p></p>
-                                </div> -->
                                 </div>
                             </div>
                             <div class="row d-flex flex-wrap" data-aos="fade-up">
                                 <div class="col-lg-6 pb-5">
-                                    <h2 class="display-4 txt-fx slide-up">Certificates</h2>
+                                    <h2 class="display-4 txt-fx slide-up">Сертификаты</h2>
                                     <div class="data-info py-3" data-aos="fade-up">
-                                        <span class="meta-date">March - 2023</span>
+                                        <span class="meta-date">Март - 2023</span>
                                         <h3 class="info-title">WorldSkills Apec 2023</h3>
-                                        <p>1st place in the intra-college WorldSkills tournament in the competence "Web
-                                            Technologies".</p>
+                                        <p>1-е место в внутривузовском турнире WorldSkills в компетенции
+                                            "Веб-технологии".</p>
                                     </div>
                                     <div class="data-info" data-aos="fade-up" data-aos-delay="100">
-                                        <span class="meta-date">April - 2023</span>
+                                        <span class="meta-date">Апрель - 2023</span>
                                         <h3 class="info-title">WorldSkills Atyrau 2023</h3>
-                                        <p>1st place at the regional WorldSkills tournament in the competence "Web
-                                            Design
-                                            and Technologies"</p>
+                                        <p>1-е место на региональном турнире WorldSkills в компетенции "Веб-дизайн и
+                                            технологии"</p>
                                     </div>
                                     <div class="data-info" data-aos="fade-up" data-aos-delay="100">
                                         <a href="images/certificate-1.pdf">
-                                            <span class="meta-date">November - 2023</span>
-                                            <h3 class="info-title">WorldSkills Kazakhstan 2023</h3>
-                                            <p>Nomination "Best Specialist" in the WorldSkills Kazakhstan 2023 Web -
-                                                Technologies Competition</p>
-
+                                            <span class="meta-date">Ноябрь - 2023</span>
+                                            <h3 class="info-title">WorldSkills Казахстан 2023</h3>
+                                            <p>Номинация "Лучший специалист" в конкурсе WorldSkills Казахстан 2023 по
+                                                веб-технологиям</p>
                                         </a>
                                     </div>
                                     <div class="data-info" data-aos="fade-up" data-aos-delay="100">
                                         <a
                                             href="https://www.coursera.org/account/accomplishments/verify/HMWH6XBHX7KE?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
-                                            <span class="meta-date">December - 2023</span>
+                                            <span class="meta-date">Декабрь - 2023</span>
                                             <h3 class="info-title">Google</h3>
-                                            <p>Foundations of Cybersecurity
-                                            </p>
+                                            <p>Основы кибербезопасности</p>
                                         </a>
                                     </div>
                                     <div class="data-info" data-aos="fade-up" data-aos-delay="100">
                                         <a
                                             href="https://www.credly.com/badges/5a58d050-68b2-4da5-a556-6c03218b1e91/linked_in_profile">
-                                            <span class="meta-date">February - 2024</span>
+                                            <span class="meta-date">Февраль - 2024</span>
                                             <h3 class="info-title">IBM / Coursera</h3>
-                                            <p>Software Engineering Essentials
-
-                                            </p>
+                                            <p>Основы программной инженерии</p>
                                         </a>
                                     </div>
                                 </div>
-                                <!-- <div class="col-lg-6 pb-5">
-                                <h2 class="display-4 txt-fx slide-up">References</h2>
-                                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
-                                    <span class="meta-date">1998 - 2004</span>
-                                    <h3 class="info-title">Dr. Stephen H. King</h3>
-                                    <p>iacentem substantiales um se sed esse haec Possit facis qui a a a patriam.</p>
-                                </div>
-                                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
-                                    <span class="meta-date">2004 - 2006</span>
-                                    <h3 class="info-title">Dr. David Howard</h3>
-                                    <p>iacentem substantiales um se sed esse haec Possit facis qui a a a patriam.</p>
-                                </div>
-                            </div> -->
                             </div>
                         </section>
 
                         <section id="experience" class="my-5 py-5 bg-text" data-text="03">
                             <div class="row justify-content-center mb-5">
                                 <div class="col-lg-6" data-aos="fade-up">
-                                    <span class="text-muted text-uppercase">Experience</span>
-                                    <h2 class="display-1 txt-fx slide-up">Stack and experiences in programs</h2>
-                                    <p>My technologies that I use in development as well as programs that I use for
-                                        professional purposes</p>
+                                    <span class="text-muted text-uppercase">Опыт</span>
+                                    <h2 class="display-1 txt-fx slide-up">Стек технологий и опыт в программах</h2>
+                                    <p>Мои технологии, которые я использую в разработке, а также программы, которые я
+                                        использую для профессиональных целей</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -520,27 +425,23 @@
                                         <table class="table">
                                             <tbody>
                                                 <tr>
-                                                    <th>Age</th>
+                                                    <th>Возраст</th>
                                                     <td>18</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Residence</th>
-                                                    <td>Kazakhstan</td>
+                                                    <th>Местожительство</th>
+                                                    <td>Казахстан</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Address</th>
-                                                    <td>Astana</td>
+                                                    <th>Адрес</th>
+                                                    <td>Астана</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Main E-mail</th>
+                                                    <th>Основной E-mail</th>
                                                     <td><a
                                                             href="mailto:dimash-aizharykov@join-way.com">dimash-aizharykov@join-way.com</a>
                                                     </td>
                                                 </tr>
-                                                <!-- <tr class="no-border-bottom">
-                                                <th>Phone</th>
-                                                <td>+7 701 989 58 81</td>
-                                            </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -550,10 +451,12 @@
                                         <ul class="skill-chart-list list-unstyled">
                                             <li>
                                                 <div class="chart-header d-flex justify-content-between">
-                                                    <span class="skill-title">HMTL / CSS</span>
+                                                    <span class="skill-title">HTML / CSS</span>
                                                     <span class="percentage">95%</span>
                                                 </div>
-                                                <div class="chart-border">
+                                                <div class="chart-border
+                        
+                        ">
                                                     <div class="chart-percentage ninety-percent"></div>
                                                 </div>
                                             </li>
@@ -586,7 +489,7 @@
                                             </li>
                                             <li>
                                                 <div class="chart-header d-flex justify-content-between">
-                                                    <span class="skill-title">Web Development</span>
+                                                    <span class="skill-title">Веб-разработка</span>
                                                     <span class="percentage">95%</span>
                                                 </div>
                                                 <div class="chart-border">
@@ -603,12 +506,12 @@
                             <div class="section-header my-5" data-aos="fade-up">
                                 <div class="row justify-content-center g-5">
                                     <div class="col-lg-4">
-                                        <span class="text-muted text-uppercase">My recent projects</span>
-                                        <h2 class="display-2 txt-fx slide-up">Portfolio</h2>
+                                        <span class="text-muted text-uppercase">Мой проекты</span>
+                                        <h2 class="display-5 txt-fx slide-up">Портфолио</h2>
                                     </div>
                                     <div class="col-lg-4" data-aos="fade-up">
-                                        <p>My latest projects that I am doing or have completed</p>
-                                        <a href="portfolio-masonry.html" class="btn btn-dark px-5 py-4">View All</a>
+                                        <p>Мои последние проекты которые я закончил</p>
+                                        <a href="portfolio-masonry.html" class="btn btn-dark px-5 py-4">Смотреть все</a>
                                     </div>
                                 </div>
                             </div>
@@ -690,9 +593,9 @@
                             <div class="container">
                                 <div class="row justify-content-center mb-5">
                                     <div class="col-lg-6" data-aos="fade-up">
-                                        <span class="text-muted text-uppercase">Personal Info</span>
-                                        <h2 class="display-1 txt-fx slide-up">Contact Me</h2>
-                                        <p>You can contact me about a job or to book a service. </p>
+                                        <span class="text-muted text-uppercase">Личные данные</span>
+                                        <h2 class="display-1 txt-fx slide-up">Мои контакты</h2>
+                                        <p>Вы можете связаться со мной в целях работы или для бронирование услуг. </p>
                                     </div>
                                 </div>
                                 <div class="row d-flex g-5">
@@ -704,20 +607,21 @@
                                                     <button class="accordion-button" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#accordion-collapse1"
                                                         aria-expanded="true" aria-controls="accordion-collapse1">
-                                                        How much experience do you have in the development field?
+                                                        Сколько у вас опыта в сфере разработки?
                                                     </button>
                                                 </h2>
                                                 <div id="accordion-collapse1" class="accordion-collapse collapse show"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        I have more than 4-5 years of experience in development
-                                                        including
-                                                        web development. During all this experience I have developed
-                                                        various
-                                                        web sites starting from a single site to some CRM systems. I am
-                                                        interested in the field of development and to this day I study
-                                                        and
-                                                        test different technologies for my needs.
+                                                        У меня более 4-5 лет опыта в разработке
+                                                        в том числе
+                                                        веб-разработки. За все это время я разработал
+                                                        различные
+                                                        веб-сайты, начиная от одного сайта и заканчивая CRM-системами. Я
+                                                        интересуюсь сферой разработки и по сей день изучаю
+                                                        и
+                                                        тестирую различные технологии для своих нужд.
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -726,21 +630,22 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#accordion-collapse2"
                                                         aria-expanded="false" aria-controls="accordion-collapse2">
-                                                        Are you ready to relocate for a new job?
+                                                        Вы готовы переехать на новое место работы?
                                                     </button>
                                                 </h2>
                                                 <div id="accordion-collapse2" class="accordion-collapse collapse"
                                                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        I am currently in the city of Atyrau in the country of
-                                                        Kazakhstan.
-                                                        At the moment ready to move if offered a decent job that is
-                                                        worth to
-                                                        move. Preferably it would be good if the work was in a hybrid
-                                                        format
-                                                        (half days online half days offline). Moving to other countries
-                                                        also
-                                                        if the proposed job is worth it.
+                                                        В настоящее время я нахожусь в городе Астана в стране
+                                                        Казахстан.
+                                                        В данный момент готов переехать, если предложат достойную
+                                                        работу, которая
+                                                        достойная
+                                                        переехать. Желательно, чтобы работа была в гибридном
+                                                        формате
+                                                        (полдня онлайн, полдня оффлайн). Переезд в другие страны
+                                                        также
+                                                        если предлагаемая работа того стоит.
                                                     </div>
                                                 </div>
                                             </div>
@@ -749,19 +654,21 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#accordion-collapse3"
                                                         aria-expanded="false" aria-controls="accordion-collapse3">
-                                                        Do you have or are you exploring the field of development now?
-                                                    </button>
+                                                        Вы занимаетесь или изучаете сейчас сферу развития? </button>
                                                 </h2>
                                                 <div id="accordion-collapse3" class="accordion-collapse collapse"
                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        Yes I am always learning about the field of development as well
-                                                        as
-                                                        web development in general. I like to discover new horizons and
-                                                        learn new things every day. As I realize that all these learned
-                                                        things in the future can help me financially as well as
-                                                        earnings. I
-                                                        like learning programming and practicing my knowledge every day.
+                                                        Да, я постоянно изучаю сферу развития, а также
+                                                        а также
+                                                        веб-разработке в целом. Мне нравится открывать для себя новые
+                                                        горизонты и
+                                                        узнавать что-то новое каждый день. Поскольку я понимаю, что все
+                                                        эти знания
+                                                        в будущем могут помочь мне как в финансовом плане, так и в плане
+                                                        заработок. I
+                                                        нравится изучать программирование и практиковать свои знания
+                                                        каждый день.
                                                     </div>
                                                 </div>
                                             </div>
@@ -770,23 +677,25 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#accordion-collapse4"
                                                         aria-expanded="false" aria-controls="accordion-collapse4">
-                                                        How much is the development service or how to contact you?
+                                                        Сколько стоит услуга по разработке или как с вами связаться?
                                                     </button>
                                                 </h2>
                                                 <div id="accordion-collapse4" class="accordion-collapse collapse"
                                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        Service in the field of development depends on the complexity
-                                                        and
-                                                        also on the time of the development of the site itself. I can
-                                                        not
-                                                        say the exact amount of services without looking at the Terms of
-                                                        Reference. If you want to discuss any projects or about the
-                                                        maintenance of the web site itself or the creation of a new site
-                                                        my
-                                                        contacts I left in this section. You can write to me by
-                                                        selecting
-                                                        one of the listed social networks and e-mail.
+                                                        Услуги в сфере разработки зависят от сложности
+                                                        и
+                                                        также от времени разработки самого сайта. Я не могу
+                                                        не могу
+                                                        назвать точный объем услуг, не ознакомившись с техническим
+                                                        заданием.
+                                                        Условия. Если вы хотите обсудить какие-либо проекты или
+                                                        поддержки самого сайта или создания нового сайта
+                                                        мой
+                                                        контакты я оставил в этом разделе. Вы можете написать мне,
+                                                        выбрав
+                                                        выбрав
+                                                        одну из перечисленных социальных сетей и электронную почту.
                                                     </div>
                                                 </div>
                                             </div>
